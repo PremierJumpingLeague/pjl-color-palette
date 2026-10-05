@@ -10,7 +10,7 @@
   @font-face { font-family: "PJL Sans"; src: url("fonts/PJLSans-Bold.otf") format("opentype"); font-weight: 700; }
 
   :root {
-    --page: #F6F6FC;       /* white-25 */
+    --page: #F8F9FA;       /* grey-50 — Web 2.0 --surface-0 */
     --surface: #FFFFFF;
     --ink: #0C2237;        /* navy-500 */
     --ink-muted: #4A627B;  /* navy-300 */
@@ -21,17 +21,17 @@
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --page: #000714;      /* navy-950 */
+      --page: #132A3F;      /* navy-475 — Web 2.0 body.dark fill */
       --surface: #001124;   /* navy-800 */
       --ink: #E2E2E8;
       --ink-muted: #90AAC5; /* navy-100 */
       --rule: #1B3147;      /* navy-450 */
-      --header: #00030C;
+      --header: #0C2237;    /* navy-500 */
     }
   }
   :root[data-theme="dark"] {
-    --page: #000714; --surface: #001124; --ink: #E2E2E8;
-    --ink-muted: #90AAC5; --rule: #1B3147; --header: #00030C;
+    --page: #132A3F; --surface: #001124; --ink: #E2E2E8;
+    --ink-muted: #90AAC5; --rule: #1B3147; --header: #0C2237;
   }
 
   * { box-sizing: border-box; }
@@ -48,7 +48,7 @@
     background: var(--header);
     color: var(--header-ink);
     padding: 40px 16px 32px;
-    border-bottom: 6px solid var(--accent);
+    border-bottom: 3px solid #CABD98; /* sand-500 */
   }
   .wrap { max-width: 1200px; margin: 0 auto; }
   header.top h1 {
